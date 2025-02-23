@@ -1,4 +1,4 @@
-public class Rectangle
+public class Rectangle extends Shape
 {
     private float length;
     private float width;
