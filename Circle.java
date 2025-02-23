@@ -1,4 +1,4 @@
-public class Circle extends Shape
+public class Circle extends Shape 
 {
     private double radius;
 
@@ -12,13 +12,6 @@ public class Circle extends Shape
         radius = r;
     }
 
-
-    public double getRadius()
-    {
-        return radius;
-    }
-
-
     public double getArea()
     {
         return radius * radius * Math.PI;
@@ -28,4 +21,5 @@ public class Circle extends Shape
     {
         return 2 * radius * Math.PI;
     }
+
 }

@@ -1,21 +1,22 @@
-public class Rectangle extends Shape
+
+public class Rectangle extends Shape implements Polygon
 {
-    private float length;
-    private float width;
+    private double length;
+    private double width;
 
     public Rectangle()
     {
-        length = 1.0f;
-        width = 1.0f;
+        length = 1.0;
+        width = 1.0;
     }
 
-    public Rectangle(float l, float w)
+    public Rectangle(double l, double w)
     {
         length = l;
         width = w;
     }
 
-    public float getLength()
+    public double getLength()
     {
         return length;
     }
@@ -25,7 +26,7 @@ public class Rectangle extends Shape
         length = l;
     }
 
-    public float getWidth()
+    public double getWidth()
     {
         return width;
     }
@@ -43,5 +44,10 @@ public class Rectangle extends Shape
     public double getPerimeter()
     {
         return 2 * (length + width);
-    }    
+    }
+
+    public int NumberOfSides()
+    {
+        return 4;
+    }
 }

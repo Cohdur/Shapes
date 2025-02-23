@@ -24,5 +24,10 @@ public class IsocelesRightTriangle extends RightTriangle
     {
         return (2 * base)  + (Math.sqrt(2) * base);
     }
+
+    public int NumberOfSides()
+    {
+        return 3;
+    }
     
 }
